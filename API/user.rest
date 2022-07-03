@@ -1,0 +1,27 @@
+@host = http://localhost:5000/user
+GET {{host}}
+
+###
+POST {{host}}
+Content-Type:application/json
+
+{
+    "name":"Vishal",
+    "email": "vishalwwdsq.com",
+    "phone":"8287940989",
+    "age":20,
+    "password":"vishal@123"
+}
+
+###
+PUT {{host}}62b865f3490e2a4d452a4158
+Content-Type:application/json
+
+{
+    "name":"Yogesh",
+    "email": "yogesh1@gmail.com",
+    "phone":8287940985,
+    "age":19,
+    "password":"yogesh123"
+    
+}

@@ -1,0 +1,20 @@
+@host=http://localhost:5000/
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmMwYjYxNTMxNzU0NDk3ZDJlMjAxYjQiLCJuYW1lIjoiVmlzaGFsIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjU2ODM5NjQxLCJleHAiOjE2NTY4NDY4NDF9.28a_FoHM0NqRgtTg-3LNKRR8lkpZkNBrDNcFg4JVtGI
+
+GET {{host}}
+
+###
+
+POST {{host}}
+Content-Type:application/json
+Authorization: Bearer {{token}}
+
+{
+    "name":"Things I Wanted to Say (but never did)",
+    "forAges": "18-25",
+    "formatPaperback":"Paperback | 504 pages",
+    "publisher":"Em Publishing",
+    "language":"English",
+    "imageURL":"https://yogesh-sahu.s3.amazonaws.com/uploads/aaaa",
+    "pdfURL":"https://yogesh-sahu.s3.amazonaws.com/uploads/books/5990bb17-8141-47ee-bfc3-bc87aef1403f"
+}
